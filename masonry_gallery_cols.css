@@ -3,10 +3,19 @@ body {
 }
 
 .masonry-gallery-cols {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -ms-flex-line-pack: start;
     align-content: flex-start;
     height: 800px;
     padding: 0;
@@ -73,6 +82,7 @@ body {
     transition-duration: 0.1s;
 }
 .hover-effects img {
+    -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
 }
 .hover-effects:hover img {
