@@ -1,0 +1,85 @@
+body {
+    overflow-y: scroll;
+}
+
+.masonry-gallery-cols {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 800px;
+    padding: 0;
+    margin: 10px;
+    opacity: 0;
+}
+
+@media (min-width: 1200px) {
+    .masonry-gallery-cols .thumbnail-item {
+        width: 20%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .masonry-gallery-cols .thumbnail-item  {
+        width: 25%;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .masonry-gallery-cols .thumbnail-item  {
+        width: 33.333%;
+    }
+}
+@media (min-width: 500px) and (max-width: 768px) {
+    .masonry-gallery-cols .thumbnail-item  {
+        width: 50%;
+    }
+}
+@media (max-width: 500px) {
+    .masonry-gallery-cols .thumbnail-item  {
+        width: 100%;
+    }
+}
+.masonry-gallery-cols .thumbnail-item {
+    padding: 5px; /* Padding might be changed */
+    margin: 0; /* Don't change! */
+    box-sizing: border-box;
+    position: relative;
+}
+.masonry-gallery-cols .thumbnail-item img {
+    display: block;
+    box-sizing: border-box;
+    width: 100%; /* Don't change! */
+    padding: 2px; /* Padding might be changed */
+    border: 2px solid #ccc; /* Border might be changed */
+    margin: 0; /* Don't change! Instead you can add padding in .thumbnail-item class  */
+}
+
+/* styles for caption and hover effects */
+.caption-center {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+.caption-center p {
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+    opacity: 0.3;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+.hover-effects img {
+    transition-duration: 0.5s;
+}
+.hover-effects:hover img {
+    -webkit-filter: grayscale(100%) brightness(90%);
+    filter: grayscale(100%) brightness(90%);
+}
+.hover-effects:hover p {
+    opacity: 1;
+}
+
