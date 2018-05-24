@@ -9,3 +9,5 @@ Add references to CSS masonry_gallery_cols.css and JS masonry_gallery_cols.js in
 Add class="masonry-gallery-cols" in your container with photos.
 You can change paddings, borders and margins of images in CSS file.
 See example of usage in index.html.
+
+![screenshot](https://github.com/vasyldzhala/masonrygallerycols/blob/master/masonry_gallery__cols_screen.JPG)
