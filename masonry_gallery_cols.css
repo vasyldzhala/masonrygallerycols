@@ -59,7 +59,7 @@ body {
     box-sizing: border-box;
     width: 100%; /* Don't change! */
     padding: 2px; /* Padding might be changed */
-    border: 2px solid #ccc; /* Border might be changed */
+    /*border: 2px solid #ccc; !* Border might be changed *!*/
     margin: 0; /* Don't change! Instead you can add padding in .thumbnail-item class  */
 }
 
